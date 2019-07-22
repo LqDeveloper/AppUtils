@@ -38,10 +38,10 @@ extension AppUtils where Base:UITextField{
         return self
     }
     
-//    public func defaultTextAttributes(_ defaultTextAttributes:[NSAttributedString.Key : Any])->AppUtils{
-//        self.base.defaultTextAttributes = defaultTextAttributes
-//        return self
-//    }
+    public func defaultTextAttributes(_ defaultTextAttributes:[NSAttributedString.Key : Any])->AppUtils{
+        self.base.defaultTextAttributes = defaultTextAttributes
+        return self
+    }
     
     public func placeholder(_ placeholder:String?)->AppUtils{
         self.base.placeholder = placeholder
@@ -87,11 +87,11 @@ extension AppUtils where Base:UITextField{
         return self
     }
     
-//    public func typingAttributes(_ typingAttributes:[NSAttributedString.Key:Any]?)->AppUtils{
-//        self.base.typingAttributes = typingAttributes
-//        return self
-//    }
-//
+    public func typingAttributes(_ typingAttributes:[NSAttributedString.Key:Any]?)->AppUtils{
+        self.base.typingAttributes = typingAttributes
+        return self
+    }
+
     public func clearButtonMode(_ clearButtonMode: UITextField.ViewMode)->AppUtils{
         self.base.clearButtonMode = clearButtonMode
         return self
@@ -175,7 +175,7 @@ extension AppUtils where Base:UITextField{
         return self
     }
     
-    @available(iOS 10.0,*)
+    @available(iOS 10.0, *)
     public func textContentType(_ textContentType: UITextContentType?)->AppUtils{
         self.base.textContentType = textContentType
         return self

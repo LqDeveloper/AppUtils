@@ -63,10 +63,10 @@ extension AppUtils where Base:UITextView{
         return self
     }
     
-//    public func typingAttributes(_ typingAttributes: [NSAttributedString.Key : Any])->AppUtils{
-//        self.base.typingAttributes = typingAttributes
-//        return self
-//    }
+    public func typingAttributes(_ typingAttributes: [NSAttributedString.Key : Any])->AppUtils{
+        self.base.typingAttributes = typingAttributes
+        return self
+    }
     
     public func inputView(_ inputView:UIView?)->AppUtils{
         self.base.inputView = inputView
@@ -88,8 +88,8 @@ extension AppUtils where Base:UITextView{
         return self
     }
     
-//    public func linkTextAttributes(_ linkTextAttributes:[NSAttributedString.Key : Any]?)->AppUtils{
-//        self.base.linkTextAttributes = linkTextAttributes
-//        return self
-//    }
+    public func linkTextAttributes(_ linkTextAttributes:[NSAttributedString.Key : Any]?)->AppUtils{
+        self.base.linkTextAttributes = linkTextAttributes
+        return self
+    }
 }
