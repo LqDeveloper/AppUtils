@@ -17,13 +17,10 @@ public struct AppDeviceInfo{
     }
     
     public static var isPhoneXSeries:Bool{
-        if #available(iOS 11.0, *){
-            guard let window =  UIApplication.shared.keyWindow else{
-                return false
-            }
-            return window.safeAreaInsets.bottom > 0.0
+        guard #available(iOS 11.0, *) else{
+            return false
         }
-        return false
+        return UIApplication.shared.windows[0].safeAreaInsets.bottom > 0
     }
     
     
@@ -48,13 +45,11 @@ public struct AppDeviceInfo{
     }
     
     public static var bottomSpace:CGFloat{
-        if #available(iOS 11.0, *){
-            guard let window =  UIApplication.shared.keyWindow else{
-                return 0
-            }
-            return window.safeAreaInsets.bottom
+        if #available(iOS 11.0, *) {
+            return UIApplication.shared.windows[0].safeAreaInsets.bottom
+        } else {
+            return 0
         }
-        return 0
     }
     
     public  static var contentHeight:CGFloat{

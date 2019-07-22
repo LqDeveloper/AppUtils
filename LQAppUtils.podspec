@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name         = 'AppUtils'
+  spec.name         = 'LQAppUtils'
   spec.version      = '1.0.0'
   spec.license      = 'MIT'
   spec.author       = { "Quan Li" => "1083099465@qq.com" }
@@ -9,5 +9,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "AppUtils/**/*.swift"
   spec.requires_arc = true
   spec.platform     = :ios, "9.0"
+  spec.swift_version = '4.2'
 end
 
