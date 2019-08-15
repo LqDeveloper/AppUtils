@@ -29,6 +29,99 @@ extension AppUtils where Base:UIView{
         return self
     }
     
+    public func semanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute)->AppUtils{
+        self.base.semanticContentAttribute = semanticContentAttribute
+        return self
+    }
+    
+    
+    public func center(_ center:CGPoint)->AppUtils{
+        self.base.center = center
+        return self
+    }
+    
+    public func transform(_ transform:CGAffineTransform)->AppUtils{
+        self.base.transform = transform
+        return self
+    }
+    
+    
+    public func contentScaleFactor(_ contentScaleFactor:CGFloat)->AppUtils{
+        self.base.contentScaleFactor = contentScaleFactor
+        return self
+    }
+    
+    
+    public func isMultipleTouchEnabled(_ isMultipleTouchEnabled:Bool)->AppUtils{
+        self.base.isMultipleTouchEnabled = isMultipleTouchEnabled
+        return self
+    }
+    
+    public func isExclusiveTouch(_ isExclusiveTouch:Bool)->AppUtils{
+        self.base.isExclusiveTouch = isExclusiveTouch
+        return self
+    }
+    
+    public func autoresizesSubviews(_ autoresizesSubviews:Bool)->AppUtils{
+        self.base.autoresizesSubviews = autoresizesSubviews
+        return self
+    }
+    
+    public func autoresizingMask(_ autoresizingMask:UIView.AutoresizingMask)->AppUtils{
+        self.base.autoresizingMask = autoresizingMask
+        return self
+    }
+    
+    public func clipsToBounds(_ clipsToBounds:Bool)->AppUtils{
+        self.base.clipsToBounds = clipsToBounds
+        return self
+    }
+    
+    public func alpha(_ alpha:CGFloat)->AppUtils{
+        self.base.alpha = alpha
+        return self
+    }
+    
+    public func isOpaque(_ isOpaque:Bool)->AppUtils{
+        self.base.isOpaque = isOpaque
+        return self
+    }
+    
+    public func clearsContextBeforeDrawing(_ clearsContextBeforeDrawing:Bool)->AppUtils{
+        self.base.clearsContextBeforeDrawing = clearsContextBeforeDrawing
+        return self
+    }
+    
+    public func isHidden(_ isHidden:Bool)->AppUtils{
+        self.base.isHidden = isHidden
+        return self
+    }
+    
+    public func contentMode(_ contentMode:UIView.ContentMode)->AppUtils{
+        self.base.contentMode = contentMode
+        return self
+    }
+    
+    public func mask(_ mask:UIView?)->AppUtils{
+        self.base.mask = mask
+        return self
+    }
+    
+    public func tintColor(_ tintColor:UIColor?)->AppUtils{
+        self.base.tintColor = tintColor
+        return self
+    }
+    
+    public func tintAdjustmentMode(_ tintAdjustmentMode:UIView.TintAdjustmentMode)->AppUtils{
+        self.base.tintAdjustmentMode = tintAdjustmentMode
+        return self
+    }
+    
+    
+    public func motionEffects(_ motionEffects:[UIMotionEffect])->AppUtils{
+        self.base.motionEffects = motionEffects
+        return self
+    }
     
     public func borderColor(_ borderColor:UIColor?) -> AppUtils {
         self.base.layer.borderColor = borderColor?.cgColor
