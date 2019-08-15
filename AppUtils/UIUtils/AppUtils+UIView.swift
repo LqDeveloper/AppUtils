@@ -14,6 +14,11 @@ extension AppUtils where Base:UIView{
         return self
     }
     
+    public func addSubview(_ view: UIView)->AppUtils{
+        self.base.addSubview(view)
+        return self
+    }
+    
     public func backgroundColor(_ backgroundColor:UIColor)->AppUtils{
         self.base.backgroundColor = backgroundColor
         return self
