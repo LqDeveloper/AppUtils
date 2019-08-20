@@ -9,20 +9,8 @@
 import UIKit
 
 open class AppBaseViewController: UIViewController {
-    
     override open func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
     }
-    
-    open var isHiddenNavigationBar:Bool{
-        set{
-            navigationController?.navigationBar.isHidden = newValue
-        }
-        get{
-            return navigationController?.navigationBar.isHidden ?? false
-        }
-    }
-    
 }
 

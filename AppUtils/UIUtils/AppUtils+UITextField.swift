@@ -91,7 +91,7 @@ extension AppUtils where Base:UITextField{
         self.base.typingAttributes = typingAttributes
         return self
     }
-
+    
     public func clearButtonMode(_ clearButtonMode: UITextField.ViewMode)->AppUtils{
         self.base.clearButtonMode = clearButtonMode
         return self

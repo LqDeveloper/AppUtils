@@ -12,8 +12,6 @@ open class AppBaseNavigationController: UINavigationController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
     }
     
     override open var shouldAutorotate: Bool{

@@ -17,18 +17,7 @@ open class AppBaseTableViewController: UITableViewController {
         }else{
             self.automaticallyAdjustsScrollViewInsets = false
         }
-        
     }
-    
-    open var isHiddenNavigationBar:Bool{
-        set{
-            navigationController?.navigationBar.isHidden = newValue
-        }
-        get{
-            return navigationController?.navigationBar.isHidden ?? false
-        }
-    }
-    
     
     override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
