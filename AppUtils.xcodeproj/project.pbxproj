@@ -14,6 +14,7 @@
 		51533CE022E065CE009845FC /* AppUtilsNameSpace.swift in Headers */ = {isa = PBXBuildFile; fileRef = 51533CDE22E064C3009845FC /* AppUtilsNameSpace.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		51533CE222E0685E009845FC /* AppUtils+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51533CE122E0685E009845FC /* AppUtils+UILabel.swift */; };
 		51533CE622E06A1C009845FC /* AppUtils+UILabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 51533CE122E0685E009845FC /* AppUtils+UILabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */; };
 		51BFFC30230557B600FC55AB /* AppUtils+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFFC2F230557B600FC55AB /* AppUtils+UIStackView.swift */; };
 		51C9F43422E199510044CA9A /* AppUtils+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9F43322E199510044CA9A /* AppUtils+UIView.swift */; };
 		51C9F43622E19B650044CA9A /* AppUtils+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9F43522E19B650044CA9A /* AppUtils+UIButton.swift */; };
@@ -75,6 +76,7 @@
 		51533CDE22E064C3009845FC /* AppUtilsNameSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilsNameSpace.swift; sourceTree = "<group>"; };
 		51533CE122E0685E009845FC /* AppUtils+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UILabel.swift"; sourceTree = "<group>"; };
 		51533CE422E06873009845FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeychainManager.swift; sourceTree = "<group>"; };
 		51BFFC2F230557B600FC55AB /* AppUtils+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIStackView.swift"; sourceTree = "<group>"; };
 		51C9F43322E199510044CA9A /* AppUtils+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIView.swift"; sourceTree = "<group>"; };
 		51C9F43522E19B650044CA9A /* AppUtils+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIButton.swift"; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				51C9F44D22E1C3490044CA9A /* AppUtils+String.swift */,
 				51C9F44F22E1C3E00044CA9A /* AppDeviceInfo.swift */,
 				51C9F46022E1C95C0044CA9A /* AppDebugLog.swift */,
+				5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				51C9F44522E1BB080044CA9A /* AppUtils+UICollectionView.swift in Sources */,
 				51F984DE22E54B1800F9329A /* AppBaseViewController.swift in Sources */,
 				51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */,
+				5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */,
 				51C9F43D22E1A97C0044CA9A /* AppUtils+UIControll.swift in Sources */,
 				51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */,
 				51F984DC22E54B1800F9329A /* AppBaseNavigationController.swift in Sources */,
