@@ -15,7 +15,8 @@ open class AppKeychainManager{
         }
         let queryItem = [kSecClass:kSecClassGenericPassword,
                          kSecAttrService:ser,
-                         kSecAttrAccount:acc] as [CFString : Any]
+                         kSecAttrAccount:acc,
+                         kSecAttrAccessible:kSecAttrAccessibleWhenUnlockedThisDeviceOnly] as [CFString : Any]
         let pwdData = pwd.data(using: .utf8)
         let updateItem = [kSecValueData:pwdData]
         return SecItemUpdate(queryItem as CFDictionary, updateItem as CFDictionary)
@@ -35,7 +36,8 @@ open class AppKeychainManager{
         let saveItem = [kSecClass:kSecClassGenericPassword,
                         kSecAttrService:ser,
                         kSecAttrAccount:acc,
-                        kSecValueData:pwdData] as [CFString : Any]
+                        kSecValueData:pwdData,
+                        kSecAttrAccessible:kSecAttrAccessibleWhenUnlockedThisDeviceOnly] as [CFString : Any]
         
         return SecItemAdd(saveItem as CFDictionary, nil)
     }

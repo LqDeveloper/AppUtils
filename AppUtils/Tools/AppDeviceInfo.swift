@@ -154,6 +154,11 @@ public struct AppDeviceInfo{
         return identifier
     }
     
+    public static var uuid:String{
+        let uuidRef = CFUUIDCreate(nil)
+        let uuidStringRef = CFUUIDCreateString(nil,uuidRef)
+        return uuidStringRef as String? ?? ""
+    }
     
     public  static var appBundleId:String {
         return Bundle.main.bundleIdentifier!
