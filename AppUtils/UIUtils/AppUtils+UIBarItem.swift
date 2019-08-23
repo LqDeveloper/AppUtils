@@ -51,5 +51,4 @@ extension AppUtils where Base:UIBarItem{
         }
         return self
     }
-    
 }

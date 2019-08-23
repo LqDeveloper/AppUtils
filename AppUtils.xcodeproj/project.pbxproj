@@ -48,6 +48,8 @@
 		51CEF6A6230BCDAD00C509E3 /* AppUtils+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A5230BCDAD00C509E3 /* AppUtils+UIViewController.swift */; };
 		51CEF6A8230BD3D000C509E3 /* AppUtils+UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A7230BD3D000C509E3 /* AppUtils+UITabBarController.swift */; };
 		51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A9230BDB6400C509E3 /* AppUtils+UITabBarItem.swift */; };
+		51F73C12230FF1230005EC2B /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C11230FF1230005EC2B /* UITabBarExtension.swift */; };
+		51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */; };
 		51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */; };
 		51F984DC22E54B1800F9329A /* AppBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984D822E54B1700F9329A /* AppBaseNavigationController.swift */; };
 		51F984DD22E54B1800F9329A /* AppBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984D922E54B1800F9329A /* AppBaseTableViewController.swift */; };
@@ -96,6 +98,8 @@
 		51CEF6A5230BCDAD00C509E3 /* AppUtils+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIViewController.swift"; sourceTree = "<group>"; };
 		51CEF6A7230BD3D000C509E3 /* AppUtils+UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UITabBarController.swift"; sourceTree = "<group>"; };
 		51CEF6A9230BDB6400C509E3 /* AppUtils+UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UITabBarItem.swift"; sourceTree = "<group>"; };
+		51F73C11230FF1230005EC2B /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
+		51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemExtension.swift; sourceTree = "<group>"; };
 		51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseTabBarController.swift; sourceTree = "<group>"; };
 		51F984D822E54B1700F9329A /* AppBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseNavigationController.swift; sourceTree = "<group>"; };
 		51F984D922E54B1800F9329A /* AppBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseTableViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		51533CBA22E0648A009845FC /* AppUtils */ = {
 			isa = PBXGroup;
 			children = (
+				51F73C10230FF10A0005EC2B /* Extension */,
 				51F984D622E54AE600F9329A /* Base */,
 				51C9F44A22E1C1320044CA9A /* Tools */,
 				51C9F43922E1A85A0044CA9A /* UIUtils */,
@@ -207,6 +212,15 @@
 				5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		51F73C10230FF10A0005EC2B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				51F73C11230FF1230005EC2B /* UITabBarExtension.swift */,
+				51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		51F984D622E54AE600F9329A /* Base */ = {
@@ -351,6 +365,7 @@
 				51C9F46122E1C95C0044CA9A /* AppDebugLog.swift in Sources */,
 				51C9F44322E1B7060044CA9A /* AppUtils+UITableView.swift in Sources */,
 				51C9F43F22E1ABBF0044CA9A /* AppUtils+UITextField.swift in Sources */,
+				51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */,
 				51C9F44922E1BF190044CA9A /* AppUtils+UITextView.swift in Sources */,
 				51CEF6A8230BD3D000C509E3 /* AppUtils+UITabBarController.swift in Sources */,
 				51C9F43B22E1A8990044CA9A /* AppUtils+UISwitch.swift in Sources */,
@@ -368,6 +383,7 @@
 				51533CE222E0685E009845FC /* AppUtils+UILabel.swift in Sources */,
 				51BFFC30230557B600FC55AB /* AppUtils+UIStackView.swift in Sources */,
 				51533CDF22E064C3009845FC /* AppUtilsNameSpace.swift in Sources */,
+				51F73C12230FF1230005EC2B /* UITabBarExtension.swift in Sources */,
 				51F984E222E54F3600F9329A /* AppUtils+UIBarItem.swift in Sources */,
 				51C9F45022E1C3E00044CA9A /* AppDeviceInfo.swift in Sources */,
 				51C9F44122E1AE780044CA9A /* AppUtils+UIScrollView.swift in Sources */,
