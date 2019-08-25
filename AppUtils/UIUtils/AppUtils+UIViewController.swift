@@ -9,8 +9,8 @@
 import UIKit
 extension UIViewController:AppUtilsProtocol{}
 
-extension AppUtils where Base:UIViewController{
-    public var isHiddenNavigationBar:Bool{
+public extension AppUtils where Base:UIViewController{
+    var isHiddenNavigationBar:Bool{
         set{
             self.base.navigationController?.navigationBar.isHidden = newValue
         }
@@ -19,27 +19,27 @@ extension AppUtils where Base:UIViewController{
         }
     }
     
-    public var navigationBar:UINavigationBar?{
+    var navigationBar:UINavigationBar?{
         return self.base.navigationController?.navigationBar
     }
     
-    public var tabBar:UITabBar?{
+    var tabBar:UITabBar?{
         return self.base.tabBarController?.tabBar
     }
     
     
-    public var navigationHeight:CGFloat{
+    var navigationHeight:CGFloat{
         return AppDeviceInfo.navigationHeight(navigationBar: navigationBar)
     }
     
-    public var tabBarHeight:CGFloat{
+    var tabBarHeight:CGFloat{
         guard let _ = self.base.navigationController else{
             return AppDeviceInfo.tabBarHeight(tabBar: tabBar,hasNav: false)
         }
         return AppDeviceInfo.tabBarHeight(tabBar: tabBar,hasNav: true)
     }
     
-    public func showAlertController(title:String?,message:String?,okTitle:String = "确定",okHandler:@escaping ((UIAlertAction)->())  ,cancleTitle:String = "取消",cancleHandler:@escaping(UIAlertAction)->(),completion: (()->Void)? = nil){
+    func showAlertController(title:String?,message:String?,okTitle:String = "确定",okHandler:@escaping ((UIAlertAction)->())  ,cancleTitle:String = "取消",cancleHandler:@escaping(UIAlertAction)->(),completion: (()->Void)? = nil){
         let alertController = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction.init(title: okTitle, style: .default, handler: okHandler)
         let cancleAction = UIAlertAction.init(title: cancleTitle, style: .cancel, handler: cancleHandler)
@@ -48,7 +48,7 @@ extension AppUtils where Base:UIViewController{
         self.base.present(alertController, animated: true, completion: completion)
     }
     
-    public func showOkAlertController(title:String?,message:String?,okTitle:String = "确定",okHandler:@escaping (UIAlertAction)->(),completion: (()->Void)? = nil){
+    func showOkAlertController(title:String?,message:String?,okTitle:String = "确定",okHandler:@escaping (UIAlertAction)->(),completion: (()->Void)? = nil){
         let alertController = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction.init(title: okTitle, style: .default, handler: okHandler)
         alertController.addAction(okAction)

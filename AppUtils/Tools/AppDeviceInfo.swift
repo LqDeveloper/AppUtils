@@ -49,19 +49,19 @@ public enum AppHardwareType:String{
 
 
 public struct AppDeviceInfo{
-    public static var isPhone: Bool{
+    static var isPhone: Bool{
         return UIDevice.current.userInterfaceIdiom == .phone
     }
     
-    public static var isPad:Bool{
+    static var isPad:Bool{
         return UIDevice.current.userInterfaceIdiom == .pad
     }
     
-    public static var isSimulator:Bool{
+    static var isSimulator:Bool{
         return deviceType == .simulator
     }
     
-    public static var isPhoneXSeries:Bool{
+    static var isPhoneXSeries:Bool{
         guard #available(iOS 11.0, *) else{
             return false
         }
@@ -69,16 +69,16 @@ public struct AppDeviceInfo{
     }
     
     
-    public static var screenWidth:CGFloat{
+    static var screenWidth:CGFloat{
         return UIScreen.main.bounds.size.width
     }
     
-    public static var screenHeight:CGFloat{
+    static var screenHeight:CGFloat{
         return UIScreen.main.bounds.size.height
     }
     
     //   只支持竖屏
-    public static var navigationHeight:CGFloat{
+    static var navigationHeight:CGFloat{
         if isPhoneXSeries{
             return 88.0
         }else{
@@ -86,7 +86,7 @@ public struct AppDeviceInfo{
         }
     }
     
-    public static var tabBarHeight:CGFloat{
+    static var tabBarHeight:CGFloat{
         if isPhoneXSeries{
             return 83.0
         }else{
@@ -94,14 +94,14 @@ public struct AppDeviceInfo{
         }
     }
     //   支持横竖屏
-    public static func navigationHeight(navigationBar:UINavigationBar?)->CGFloat{
+    static func navigationHeight(navigationBar:UINavigationBar?)->CGFloat{
         guard let nav = navigationBar else {
             return statusBarHeight
         }
         return nav.frame.size.height + statusBarHeight
     }
     
-    public static func tabBarHeight(tabBar:UITabBar?,hasNav:Bool)->CGFloat{
+    static func tabBarHeight(tabBar:UITabBar?,hasNav:Bool)->CGFloat{
         guard let tab = tabBar else {
             return bottomSpace
         }
@@ -111,11 +111,11 @@ public struct AppDeviceInfo{
         return tab.frame.size.height + bottomSpace
     }
     
-    public static var statusBarHeight:CGFloat{
+    static var statusBarHeight:CGFloat{
         return UIApplication.shared.statusBarFrame.size.height
     }
     
-    public static var bottomSpace:CGFloat{
+    static var bottomSpace:CGFloat{
         if #available(iOS 11.0, *) {
             return UIApplication.shared.windows[0].safeAreaInsets.bottom
         } else {
@@ -124,26 +124,26 @@ public struct AppDeviceInfo{
     }
     
     
-    public static var appName:String{
+    static var appName:String{
         let bundleDict = Bundle.main.infoDictionary!
         let appName = bundleDict["CFBundleDisplayName"] as! String
         return appName
     }
     
     
-    public static var appVersion:String{
+    static var appVersion:String{
         let bundleDict = Bundle.main.infoDictionary!
         let appName = bundleDict["CFBundleShortVersionString"] as! String
         return appName
     }
     
     
-    public static var systemVersion:String{
+    static var systemVersion:String{
         let currentDevice = UIDevice.current
         return currentDevice.systemVersion
     }
     
-    public  static var hardwareString:String{
+    static var hardwareString:String{
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
@@ -154,25 +154,25 @@ public struct AppDeviceInfo{
         return identifier
     }
     
-    public static var uuid:String{
+    static var uuid:String{
         let uuidRef = CFUUIDCreate(nil)
         let uuidStringRef = CFUUIDCreateString(nil,uuidRef)
         return uuidStringRef as String? ?? ""
     }
     
-    public  static var appBundleId:String {
+    static var appBundleId:String {
         return Bundle.main.bundleIdentifier!
     }
     
-    public static var documentPath:String{
+    static var documentPath:String{
         return NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
     }
     
-    public static var cachePath:String{
+    static var cachePath:String{
         return NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0]
     }
     
-    public static var deviceType:AppHardwareType{
+    static var deviceType:AppHardwareType{
         let platform = hardwareString
         switch platform{
         case "i386","x86_64":

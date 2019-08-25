@@ -7,8 +7,8 @@
 //
 
 import UIKit
-extension AppUtils where Base:UITabBarController{
-    public func addViewControllers(viewControllers:[UIViewController],titles:[String],normalImages:[UIImage?],normalAttribute:[NSAttributedString.Key : Any]? = nil,selectImages:[UIImage?],selectAttribute:[NSAttributedString.Key : Any]? = nil,titlePosition:UIOffset? = nil)->Base{
+public extension AppUtils where Base:UITabBarController{
+    func addViewControllers(viewControllers:[UIViewController],titles:[String],normalImages:[UIImage?],normalAttribute:[NSAttributedString.Key : Any]? = nil,selectImages:[UIImage?],selectAttribute:[NSAttributedString.Key : Any]? = nil,titlePosition:UIOffset? = nil)->Base{
         self.base.viewControllers = viewControllers
         guard let tabBarItems = self.base.tabBar.items else {
             return self.base
@@ -26,7 +26,7 @@ extension AppUtils where Base:UITabBarController{
         return self.base
     }
     
-    public func badgeValue(badgeValue:String?,atIndex:Int){
+    func badgeValue(badgeValue:String?,atIndex:Int){
         guard let tabBarItems = self.base.tabBar.items else {
             return
         }
@@ -37,28 +37,25 @@ extension AppUtils where Base:UITabBarController{
         tabBarItem.badgeValue = badgeValue
     }
     
-    
-    public  func badgeColor(badgeColor:UIColor?,atIndex:Int = -1){
-        if #available(iOS 10.0, *){
-            guard let color = badgeColor else {
-                return
+    @available(iOS 10.0, *)
+    func badgeColor(badgeColor:UIColor?,atIndex:Int = -1){
+        guard let color = badgeColor else {
+            return
+        }
+        guard let tabBarItems = self.base.tabBar.items else {
+            return
+        }
+        if atIndex == -1{
+            tabBarItems.forEach { (item) in
+                item.badgeColor = color
             }
-            guard let tabBarItems = self.base.tabBar.items else {
-                return
-            }
-            if atIndex == -1{
-                tabBarItems.forEach { (item) in
-                    item.badgeColor = color
-                }
-            }else{
-                let tabBarItem = tabBarItems[atIndex]
-                tabBarItem.badgeColor = color
-            }
-            
+        }else{
+            let tabBarItem = tabBarItems[atIndex]
+            tabBarItem.badgeColor = color
         }
     }
     
-    public  func titlePositionAdjustment(titlePositionAdjustment: UIOffset?){
+    func titlePositionAdjustment(titlePositionAdjustment: UIOffset?){
         guard let tp = titlePositionAdjustment else {
             return
         }
@@ -70,17 +67,16 @@ extension AppUtils where Base:UITabBarController{
         }
     }
     
-    public func setBadgeTextAttributes(_ textAttributes: [NSAttributedString.Key : Any]?, for state: UIControl.State ,atIndex:Int){
-        if #available(iOS 10.0, *){
-            guard let tabBarItems = self.base.tabBar.items else {
-                return
-            }
-            guard  atIndex >= tabBarItems.count else {
-                return
-            }
-            let tabBarItem = tabBarItems[atIndex]
-            tabBarItem.setBadgeTextAttributes(textAttributes, for: state)
+    @available(iOS 10.0, *)
+    func setBadgeTextAttributes(_ textAttributes: [NSAttributedString.Key : Any]?, for state: UIControl.State ,atIndex:Int){
+        guard let tabBarItems = self.base.tabBar.items else {
+            return
         }
+        guard  atIndex >= tabBarItems.count else {
+            return
+        }
+        let tabBarItem = tabBarItems[atIndex]
+        tabBarItem.setBadgeTextAttributes(textAttributes, for: state)
     }
 }
 

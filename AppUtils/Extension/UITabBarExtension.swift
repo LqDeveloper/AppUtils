@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITabBar{
+public extension UITabBar{
     @IBInspectable var selectColor:UIColor?{
         get{
             guard let item = items?.first else {

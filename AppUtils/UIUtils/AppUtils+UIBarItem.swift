@@ -7,48 +7,45 @@
 //
 
 import Foundation
-extension AppUtils where Base:UIBarItem{
-    public func isEnabled(_ isEnabled:Bool)->AppUtils{
+public extension AppUtils where Base:UIBarItem{
+    func isEnabled(_ isEnabled:Bool)->AppUtils{
         self.base.isEnabled = isEnabled
         return self
     }
     
-    public func title(_ title:String?)->AppUtils{
+    func title(_ title:String?)->AppUtils{
         self.base.title = title
         return self
     }
     
-    public func image(_ image:UIImage?)->AppUtils{
+    func image(_ image:UIImage?)->AppUtils{
         self.base.image = image
         return self
     }
     
-    public func landscapeImagePhone(_ landscapeImagePhone:UIImage?)->AppUtils{
+    func landscapeImagePhone(_ landscapeImagePhone:UIImage?)->AppUtils{
         self.base.landscapeImagePhone = landscapeImagePhone
         return self
     }
     
-    public func largeContentSizeImage(_ largeContentSizeImage:UIImage?)->AppUtils{
-        if #available(iOS 11.0, *){
-            self.base.largeContentSizeImage = largeContentSizeImage
-        }
+    @available(iOS 11.0, *)
+    func largeContentSizeImage(_ largeContentSizeImage:UIImage?)->AppUtils{
+        self.base.largeContentSizeImage = largeContentSizeImage
         return self
     }
     
-    public func imageInsets(_ imageInsets:UIEdgeInsets)->AppUtils{
+    func imageInsets(_ imageInsets:UIEdgeInsets)->AppUtils{
         self.base.imageInsets = imageInsets
         return self
     }
     
-    public func landscapeImagePhoneInsets(_ landscapeImagePhoneInsets:UIEdgeInsets)->AppUtils{
+    func landscapeImagePhoneInsets(_ landscapeImagePhoneInsets:UIEdgeInsets)->AppUtils{
         self.base.landscapeImagePhoneInsets = landscapeImagePhoneInsets
         return self
     }
-    
-    public func largeContentSizeImageInsets(_ largeContentSizeImageInsets:UIEdgeInsets)->AppUtils{
-        if #available(iOS 11.0, *){
-            self.base.largeContentSizeImageInsets = largeContentSizeImageInsets
-        }
+    @available(iOS 11.0, *)
+    func largeContentSizeImageInsets(_ largeContentSizeImageInsets:UIEdgeInsets)->AppUtils{
+        self.base.largeContentSizeImageInsets = largeContentSizeImageInsets
         return self
     }
 }

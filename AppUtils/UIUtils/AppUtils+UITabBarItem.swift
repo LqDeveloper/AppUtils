@@ -27,17 +27,15 @@ extension AppUtils where Base:UITabBarItem{
         return self
     }
     
+    @available(iOS 10.0, *)
     public func badgeColor(_ badgeColor: UIColor?)->AppUtils{
-        if #available(iOS 10.0, *){
-            self.base.badgeColor = badgeColor
-        }
+        self.base.badgeColor = badgeColor
         return self
     }
     
+    @available(iOS 10.0, *)
     public func setBadgeTextAttributes(_ textAttributes: [NSAttributedString.Key : Any]?, for state: UIControl.State)->AppUtils{
-        if #available(iOS 10.0, *){
-            self.base.setBadgeTextAttributes(textAttributes, for: state)
-        }
+        self.base.setBadgeTextAttributes(textAttributes, for: state)
         return self
     }
 }

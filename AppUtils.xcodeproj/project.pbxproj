@@ -56,6 +56,7 @@
 		51F984DE22E54B1800F9329A /* AppBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984DA22E54B1800F9329A /* AppBaseViewController.swift */; };
 		51F984E022E54C5700F9329A /* AppUtils+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984DF22E54C5700F9329A /* AppUtils+UITabBar.swift */; };
 		51F984E222E54F3600F9329A /* AppUtils+UIBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984E122E54F3600F9329A /* AppUtils+UIBarItem.swift */; };
+		5AC95B822312B59D001909F4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC95B812312B59D001909F4 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		51F984DA22E54B1800F9329A /* AppBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseViewController.swift; sourceTree = "<group>"; };
 		51F984DF22E54C5700F9329A /* AppUtils+UITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UITabBar.swift"; sourceTree = "<group>"; };
 		51F984E122E54F3600F9329A /* AppUtils+UIBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIBarItem.swift"; sourceTree = "<group>"; };
+		5AC95B812312B59D001909F4 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			children = (
 				51F73C11230FF1230005EC2B /* UITabBarExtension.swift */,
 				51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */,
+				5AC95B812312B59D001909F4 /* UIViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				51C9F43B22E1A8990044CA9A /* AppUtils+UISwitch.swift in Sources */,
 				51C9F44722E1BDDF0044CA9A /* AppUtils+UICollectionViewLayout.swift in Sources */,
 				51C9F43822E1A70C0044CA9A /* AppUtils+UIImageView.swift in Sources */,
+				5AC95B822312B59D001909F4 /* UIViewExtension.swift in Sources */,
 				51C9F44E22E1C3490044CA9A /* AppUtils+String.swift in Sources */,
 				51C9F44522E1BB080044CA9A /* AppUtils+UICollectionView.swift in Sources */,
 				51F984DE22E54B1800F9329A /* AppBaseViewController.swift in Sources */,

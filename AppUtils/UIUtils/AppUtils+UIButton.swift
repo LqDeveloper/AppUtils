@@ -7,7 +7,7 @@
 //
 
 import Foundation
-extension AppUtils where Base:UIButton{
+public extension AppUtils where Base:UIButton{
     func contentEdgeInsets(_ contentEdgeInsets:UIEdgeInsets) -> AppUtils {
         self.base.contentEdgeInsets = contentEdgeInsets
         return self

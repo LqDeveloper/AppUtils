@@ -7,58 +7,48 @@
 //
 
 import UIKit
-extension AppUtils where Base:UILabel{
-    public func text(_ text:String?)->AppUtils{
+public extension AppUtils where Base:UILabel{
+    func text(_ text:String?)->AppUtils{
         self.base.text = text
         return self
     }
     
-    public func attributedText(_ attributedText:NSAttributedString?)->AppUtils{
+    func attributedText(_ attributedText:NSAttributedString?)->AppUtils{
         self.base.attributedText = attributedText
         return self
     }
     
-    public func font(_ font:UIFont?)->AppUtils{
+    func font(_ font:UIFont?)->AppUtils{
         self.base.font = font
         return self
     }
     
-    public func textColor(_ textColor:UIColor?)->AppUtils{
+    func textColor(_ textColor:UIColor?)->AppUtils{
         self.base.textColor = textColor
         return self
     }
     
-    public func shadowColor(_ shadowColor:UIColor?)->AppUtils{
-        self.base.shadowColor = shadowColor
-        return self
-    }
-    
-    public func shadowOffset(_ shadowOffset:CGSize)->AppUtils{
-        self.base.shadowOffset = shadowOffset
-        return self
-    }
-    
-    public func textAlignment(_ textAlignment:NSTextAlignment)->AppUtils{
+    func textAlignment(_ textAlignment:NSTextAlignment)->AppUtils{
         self.base.textAlignment = textAlignment
         return self
     }
     
-    public func lineBreakMode(_ lineBreakMode:NSLineBreakMode)-> AppUtils{
+    func lineBreakMode(_ lineBreakMode:NSLineBreakMode)-> AppUtils{
         self.base.lineBreakMode = lineBreakMode
         return self
     }
     
-    public func highlightedTextColor(_ highlightedTextColor:UIColor?)->AppUtils{
+    func highlightedTextColor(_ highlightedTextColor:UIColor?)->AppUtils{
         self.base.highlightedTextColor = highlightedTextColor
         return self
     }
     
-    public func isEnabled(_ isEnabled:Bool)->AppUtils{
+    func isEnabled(_ isEnabled:Bool)->AppUtils{
         self.base.isEnabled = isEnabled
         return self
     }
     
-    public func numberOfLines(_ numberOfLines:Int)->AppUtils{
+    func numberOfLines(_ numberOfLines:Int)->AppUtils{
         self.base.numberOfLines = numberOfLines
         return self
     }

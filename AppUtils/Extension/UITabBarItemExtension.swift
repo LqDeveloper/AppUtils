@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITabBarItem{
+public extension UITabBarItem{
     @IBInspectable  var normalimage: UIImage?{
         get{
             return self.image
