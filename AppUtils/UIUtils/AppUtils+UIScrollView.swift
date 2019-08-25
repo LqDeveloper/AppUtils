@@ -113,6 +113,7 @@ public extension AppUtils where Base:UIScrollView{
         return self
     }
     
+    @available(iOS 10.0, *)
     func refreshControl(_ refreshControl: UIRefreshControl?)->AppUtils{
         self.base.refreshControl = refreshControl
         return self
