@@ -9,7 +9,7 @@
 import Foundation
 import Security
 open class AppKeychainManager{
-    class func update(service:String?,account:String?,password:String?) ->OSStatus{
+    open  class func update(service:String?,account:String?,password:String?) ->OSStatus{
         guard let ser = service,let acc = account,let pwd = password else {
             return errSecParam
         }
@@ -23,7 +23,7 @@ open class AppKeychainManager{
     }
     
     
-    class func save(service:String?,account:String?,password:String?)->OSStatus{
+    open class func save(service:String?,account:String?,password:String?)->OSStatus{
         guard let ser = service,let acc = account,let pwd = password else {
             return errSecParam
         }
@@ -43,7 +43,7 @@ open class AppKeychainManager{
     }
     
     
-    class func query(service:String?,account:String?)->(OSStatus,String?){
+    open class func query(service:String?,account:String?)->(OSStatus,String?){
         guard let ser = service,let acc = account else {
             return (errSecParam,nil)
         }
@@ -65,7 +65,7 @@ open class AppKeychainManager{
         return (status,nil)
     }
     
-    class func delete(service:String?,account:String?)->OSStatus{
+    open class func delete(service:String?,account:String?)->OSStatus{
         guard let ser = service,let acc = account else {
             return errSecParam
         }

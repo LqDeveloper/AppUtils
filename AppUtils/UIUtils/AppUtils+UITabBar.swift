@@ -6,7 +6,7 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
-import Foundation
+import UIKit
 public extension AppUtils where Base:UITabBar{
     func delegate(_ delegate:UITabBarDelegate?)->AppUtils{
         self.base.delegate = delegate

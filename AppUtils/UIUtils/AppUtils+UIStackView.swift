@@ -6,7 +6,7 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
-import Foundation
+import UIKit
 public extension AppUtils where Base:UIStackView{
     func addArrangedSubview(_ view: UIView)->AppUtils{
         self.base.addArrangedSubview(view)

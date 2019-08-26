@@ -6,7 +6,7 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
-import Foundation
+import UIKit
 public extension AppUtils where Base:UIBarItem{
     func isEnabled(_ isEnabled:Bool)->AppUtils{
         self.base.isEnabled = isEnabled
