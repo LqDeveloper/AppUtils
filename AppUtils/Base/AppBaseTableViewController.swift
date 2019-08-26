@@ -18,21 +18,5 @@ open class AppBaseTableViewController: UITableViewController {
             self.automaticallyAdjustsScrollViewInsets = false
         }
     }
-    
-    override open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    override open func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 1
-    }
-    
-    override open func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 1
-    }
-    
-    override open var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
-    }
 }
 
