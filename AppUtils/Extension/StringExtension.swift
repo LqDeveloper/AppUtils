@@ -8,7 +8,7 @@
 
 import Foundation
 import CommonCrypto
-extension String{
+public extension String{
     func md5() -> String {
         let str = self.cString(using: String.Encoding.utf8)
         let strLen = CUnsignedInt(self.lengthOfBytes(using: String.Encoding.utf8))
