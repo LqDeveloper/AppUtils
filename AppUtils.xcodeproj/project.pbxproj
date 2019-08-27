@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		511663452314BF21005279A4 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511663442314BF21005279A4 /* UIScrollViewExtension.swift */; };
+		5136E81923151DE800E517A7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136E81823151DE800E517A7 /* StringExtension.swift */; };
 		51533CC222E0648A009845FC /* AppUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51533CB822E0648A009845FC /* AppUtils.framework */; };
 		51533CC722E0648A009845FC /* AppUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51533CC622E0648A009845FC /* AppUtilsTests.swift */; };
 		51533CC922E0648A009845FC /* AppUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 51533CBB22E0648A009845FC /* AppUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		511663442314BF21005279A4 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		5136E81823151DE800E517A7 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		51533CB822E0648A009845FC /* AppUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51533CBB22E0648A009845FC /* AppUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
 		51533CBC22E0648A009845FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */,
 				5AC95B812312B59D001909F4 /* UIViewExtension.swift */,
 				511663442314BF21005279A4 /* UIScrollViewExtension.swift */,
+				5136E81823151DE800E517A7 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */,
 				51C9F43D22E1A97C0044CA9A /* AppUtils+UIControll.swift in Sources */,
 				511663452314BF21005279A4 /* UIScrollViewExtension.swift in Sources */,
+				5136E81923151DE800E517A7 /* StringExtension.swift in Sources */,
 				51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */,
 				51F984DC22E54B1800F9329A /* AppBaseNavigationController.swift in Sources */,
 				51C9F43622E19B650044CA9A /* AppUtils+UIButton.swift in Sources */,
