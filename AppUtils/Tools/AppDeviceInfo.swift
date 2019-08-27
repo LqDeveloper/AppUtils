@@ -160,6 +160,10 @@ public struct AppDeviceInfo{
         return uuidStringRef as String? ?? ""
     }
     
+    public static var countryCode:String{
+        return (NSLocale.current as NSLocale).object(forKey: NSLocale.Key.countryCode) as! String
+    }
+    
     public static var appBundleId:String {
         return Bundle.main.bundleIdentifier!
     }
