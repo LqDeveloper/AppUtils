@@ -10,15 +10,6 @@ import UIKit
 extension UIViewController:AppUtilsProtocol{}
 
 public extension AppUtils where Base:UIViewController{
-    var isHiddenNavigationBar:Bool{
-        set{
-            self.base.navigationController?.navigationBar.isHidden = newValue
-        }
-        get{
-            return self.base.navigationController?.navigationBar.isHidden ?? false
-        }
-    }
-    
     var navigationBar:UINavigationBar?{
         return self.base.navigationController?.navigationBar
     }
@@ -55,6 +46,3 @@ public extension AppUtils where Base:UIViewController{
         self.base.present(alertController, animated: true, completion: completion)
     }
 }
-
-
-

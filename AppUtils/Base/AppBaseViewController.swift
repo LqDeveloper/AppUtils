@@ -9,6 +9,14 @@
 import UIKit
 
 open class AppBaseViewController: UIViewController {
+    public var isHiddenNavigationBar:Bool{
+        set{
+            navigationController?.setNavigationBarHidden(newValue, animated: true)
+        }
+        get{
+            return navigationController?.navigationBar.isHidden ?? false
+        }
+    }
     override open func viewDidLoad() {
         super.viewDidLoad()
     }
