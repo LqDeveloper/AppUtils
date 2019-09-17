@@ -3,7 +3,7 @@
 //  AppUtils
 //
 //  Created by Quan Li on 2019/7/22.
-//  Copyright © 2019 williamoneilchina. All rights reserved.
+//  Copyright © 2019 lq. All rights reserved.
 //
 
 import UIKit

@@ -3,15 +3,15 @@
 //  AppUtils
 //
 //  Created by Quan Li on 2019/8/20.
-//  Copyright © 2019 williamoneilchina. All rights reserved.
+//  Copyright © 2019 lq. All rights reserved.
 //
 
 import UIKit
-public extension AppUtils where Base:UITabBarController{
-    func addViewControllers(viewControllers:[UIViewController],titles:[String],normalImages:[UIImage?],normalAttribute:[NSAttributedString.Key : Any]? = nil,selectImages:[UIImage?],selectAttribute:[NSAttributedString.Key : Any]? = nil,titlePosition:UIOffset? = nil)->Base{
-        self.base.viewControllers = viewControllers
-        guard let tabBarItems = self.base.tabBar.items else {
-            return self.base
+public extension UITabBarController{
+    func addViewControllers(viewControllers:[UIViewController],titles:[String],normalImages:[UIImage?],normalAttribute:[NSAttributedString.Key : Any]? = nil,selectImages:[UIImage?],selectAttribute:[NSAttributedString.Key : Any]? = nil,titlePosition:UIOffset? = nil){
+        self.viewControllers = viewControllers
+        guard let tabBarItems = self.tabBar.items else {
+            return
         }
         for (index,tabBarItem) in tabBarItems.enumerated(){
             tabBarItem.image = normalImages[index]
@@ -23,11 +23,10 @@ public extension AppUtils where Base:UITabBarController{
                 tabBarItem.titlePositionAdjustment = tp
             }
         }
-        return self.base
     }
     
     func badgeValue(badgeValue:String?,atIndex:Int){
-        guard let tabBarItems = self.base.tabBar.items else {
+        guard let tabBarItems = self.tabBar.items else {
             return
         }
         guard  atIndex >= tabBarItems.count else {
@@ -42,7 +41,7 @@ public extension AppUtils where Base:UITabBarController{
         guard let color = badgeColor else {
             return
         }
-        guard let tabBarItems = self.base.tabBar.items else {
+        guard let tabBarItems = self.tabBar.items else {
             return
         }
         if atIndex == -1{
@@ -59,7 +58,7 @@ public extension AppUtils where Base:UITabBarController{
         guard let tp = titlePositionAdjustment else {
             return
         }
-        guard let tabBarItems = self.base.tabBar.items else {
+        guard let tabBarItems = self.tabBar.items else {
             return
         }
         tabBarItems.forEach { (item) in
@@ -69,7 +68,7 @@ public extension AppUtils where Base:UITabBarController{
     
     @available(iOS 10.0, *)
     func setBadgeTextAttributes(_ textAttributes: [NSAttributedString.Key : Any]?, for state: UIControl.State ,atIndex:Int){
-        guard let tabBarItems = self.base.tabBar.items else {
+        guard let tabBarItems = self.tabBar.items else {
             return
         }
         guard  atIndex >= tabBarItems.count else {

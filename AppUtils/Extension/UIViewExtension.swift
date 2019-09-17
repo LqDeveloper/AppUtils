@@ -3,7 +3,7 @@
 //  AppUtils
 //
 //  Created by liquan on 2019/8/25.
-//  Copyright © 2019 williamoneilchina. All rights reserved.
+//  Copyright © 2019 lq. All rights reserved.
 //
 
 import Foundation

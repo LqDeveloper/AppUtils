@@ -3,7 +3,7 @@
 //  AppUtils
 //
 //  Created by Quan Li on 2019/7/19.
-//  Copyright © 2019 williamoneilchina. All rights reserved.
+//  Copyright © 2019 lq. All rights reserved.
 //
 
 import UIKit
@@ -167,6 +167,16 @@ public extension AppUtils where Base:UIView{
         self.base.layer.shadowRadius = radius
         self.base.layer.shadowOpacity = opacity
         self.base.layer.masksToBounds = false
+        return self
+    }
+    
+    func blur(withStyle style: UIBlurEffect.Style = .light)->AppUtils {
+        let blurEffect = UIBlurEffect(style: style)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.base.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.base.addSubview(blurEffectView)
+        self.base.clipsToBounds = true
         return self
     }
     

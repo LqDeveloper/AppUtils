@@ -3,12 +3,11 @@
 //  AppUtils
 //
 //  Created by Quan Li on 2019/7/19.
-//  Copyright © 2019 williamoneilchina. All rights reserved.
+//  Copyright © 2019 lq. All rights reserved.
 //
 
 import UIKit
-extension UIColor:AppUtilsProtocol{}
-public extension AppUtils where Base == UIColor{
+public extension UIColor{
     static func color(red255:Int,green255:Int,blue255:Int,alpha:CGFloat = 1.0) ->UIColor{
         return UIColor.init(red: CGFloat(red255)/255.0, green: CGFloat(green255)/255.0, blue: CGFloat(blue255)/255.0, alpha: alpha)
     }
@@ -27,7 +26,7 @@ public extension AppUtils where Base == UIColor{
         var fBlue:CGFloat = 0.0
         var fAlpha:CGFloat = 0.0
         
-        if self.base.getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha) {
+        if self.getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha) {
             return (red:fRed,green:fGreen,blue:fBlue,alpha:fAlpha)
         }else{
             return nil

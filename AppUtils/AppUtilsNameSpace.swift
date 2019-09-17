@@ -3,7 +3,7 @@
 //  AppUtils
 //
 //  Created by Quan Li on 2019/7/18.
-//  Copyright © 2019 williamoneilchina. All rights reserved.
+//  Copyright © 2019 lq. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ public struct AppUtils<Base> {
         self.base = base
     }
     
-    public func getBase()->Base{
+    public func build()->Base{
         return self.base
     }
 }
@@ -23,16 +23,16 @@ public struct AppUtils<Base> {
 
 public protocol AppUtilsProtocol{
     associatedtype  ObType
-    static var tool:AppUtils<ObType>.Type {get}
-    var tool:AppUtils<ObType> {get}
+    static var builder:AppUtils<ObType>.Type {get}
+    var builder:AppUtils<ObType> {get}
 }
 
 
 extension AppUtilsProtocol{
-    public static var tool:AppUtils<Self>.Type{
+    public static var builder:AppUtils<Self>.Type{
         return AppUtils<Self>.self
     }
-    public var tool:AppUtils<Self>{
+    public var builder:AppUtils<Self>{
         return AppUtils<Self>.init(self)
     }
 }
