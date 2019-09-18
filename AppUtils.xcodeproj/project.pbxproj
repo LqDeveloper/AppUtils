@@ -51,6 +51,7 @@
 		51F7315D2331C212006355B4 /* AppUtils+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */; };
 		51F7315F2331C3D9006355B4 /* AppUtils+UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */; };
 		51F731612331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */; };
+		51F731C323323421006355B4 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F731C223323421006355B4 /* AES.swift */; };
 		51F73C12230FF1230005EC2B /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C11230FF1230005EC2B /* UITabBarExtension.swift */; };
 		51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */; };
 		51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */; };
@@ -107,6 +108,7 @@
 		51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+WKWebView.swift"; sourceTree = "<group>"; };
 		51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIWebView.swift"; sourceTree = "<group>"; };
 		51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+WKWebViewConfiguration.swift"; sourceTree = "<group>"; };
+		51F731C223323421006355B4 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
 		51F73C11230FF1230005EC2B /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
 		51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemExtension.swift; sourceTree = "<group>"; };
 		51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				51C9F44F22E1C3E00044CA9A /* AppDeviceInfo.swift */,
 				51C9F46022E1C95C0044CA9A /* AppDebugLog.swift */,
 				5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */,
+				51F731C223323421006355B4 /* AES.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */,
 				5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */,
 				51C9F43D22E1A97C0044CA9A /* AppUtils+UIControll.swift in Sources */,
+				51F731C323323421006355B4 /* AES.swift in Sources */,
 				511663452314BF21005279A4 /* UIScrollViewExtension.swift in Sources */,
 				5136E81923151DE800E517A7 /* StringExtension.swift in Sources */,
 				51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */,
