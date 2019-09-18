@@ -49,26 +49,26 @@ public extension AppUtils where Base:UIButton{
         return self
     }
     
-    func setTitle(_ title: String?, for state: UIControl.State)->AppUtils{
+    func setTitle(_ title: String?, for state: UIControl.State) -> AppUtils{
         self.base.setTitle(title, for: state)
         return self
     }
     
-    func setTitleColor(_ color: UIColor?, for state: UIControl.State)->AppUtils{
+    func setTitleColor(_ color: UIColor?, for state: UIControl.State) -> AppUtils{
         self.base.setTitleColor(color, for: state)
         return self
     }
     
-    func setImage(_ image: UIImage?, for state: UIControl.State)->AppUtils{
+    func setImage(_ image: UIImage?, for state: UIControl.State) -> AppUtils{
         self.base.setImage(image, for: state)
         return self
     }
     
-    func setBackgroundImage(_ image: UIImage?, for state: UIControl.State)->AppUtils{
+    func setBackgroundImage(_ image: UIImage?, for state: UIControl.State) -> AppUtils{
         self.base.setBackgroundImage(image, for: state)
         return self
     }
-    func setAttributedTitle(_ title: NSAttributedString?, for state: UIControl.State) ->AppUtils{
+    func setAttributedTitle(_ title: NSAttributedString?, for state: UIControl.State)  -> AppUtils{
         self.base.setAttributedTitle(title, for: state)
         return self
     }

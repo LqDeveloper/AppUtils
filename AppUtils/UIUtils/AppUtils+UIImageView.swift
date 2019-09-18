@@ -8,37 +8,37 @@
 
 import UIKit
 public extension AppUtils where Base:UIImageView{
-    func image(_ image:UIImage?)->AppUtils{
+    func image(_ image:UIImage?) -> AppUtils{
         self.base.image = image
         return self
     }
     
-    func highlightedImage(_ highlightedImage:UIImage?)->AppUtils{
+    func highlightedImage(_ highlightedImage:UIImage?) -> AppUtils{
         self.base.highlightedImage = highlightedImage
         return self
     }
     
-    func isHighlighted(_ isHighlighted:Bool)->AppUtils{
+    func isHighlighted(_ isHighlighted:Bool) -> AppUtils{
         self.base.isHighlighted = isHighlighted
         return self
     }
     
-    func animationImages(_ animationImages:[UIImage]?)->AppUtils{
+    func animationImages(_ animationImages:[UIImage]?) -> AppUtils{
         self.base.animationImages = animationImages
         return self
     }
     
-    func highlightedAnimationImages(_ highlightedAnimationImages:[UIImage]?)->AppUtils{
+    func highlightedAnimationImages(_ highlightedAnimationImages:[UIImage]?) -> AppUtils{
         self.base.highlightedAnimationImages = highlightedAnimationImages
         return self
     }
     
-    func animationDuration(_ animationDuration:TimeInterval)->AppUtils{
+    func animationDuration(_ animationDuration:TimeInterval) -> AppUtils{
         self.base.animationDuration = animationDuration
         return self
     }
     
-    func animationRepeatCount(_ animationRepeatCount:Int)->AppUtils{
+    func animationRepeatCount(_ animationRepeatCount:Int) -> AppUtils{
         self.base.animationRepeatCount = animationRepeatCount
         return self
     }

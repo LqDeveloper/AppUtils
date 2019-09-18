@@ -8,27 +8,27 @@
 
 import UIKit
 public extension AppUtils where Base:UILabel{
-    func text(_ text:String?)->AppUtils{
+    func text(_ text:String?) -> AppUtils{
         self.base.text = text
         return self
     }
     
-    func attributedText(_ attributedText:NSAttributedString?)->AppUtils{
+    func attributedText(_ attributedText:NSAttributedString?) -> AppUtils{
         self.base.attributedText = attributedText
         return self
     }
     
-    func font(_ font:UIFont?)->AppUtils{
+    func font(_ font:UIFont?) -> AppUtils{
         self.base.font = font
         return self
     }
     
-    func textColor(_ textColor:UIColor?)->AppUtils{
+    func textColor(_ textColor:UIColor?) -> AppUtils{
         self.base.textColor = textColor
         return self
     }
     
-    func textAlignment(_ textAlignment:NSTextAlignment)->AppUtils{
+    func textAlignment(_ textAlignment:NSTextAlignment) -> AppUtils{
         self.base.textAlignment = textAlignment
         return self
     }
@@ -38,17 +38,17 @@ public extension AppUtils where Base:UILabel{
         return self
     }
     
-    func highlightedTextColor(_ highlightedTextColor:UIColor?)->AppUtils{
+    func highlightedTextColor(_ highlightedTextColor:UIColor?) -> AppUtils{
         self.base.highlightedTextColor = highlightedTextColor
         return self
     }
     
-    func isEnabled(_ isEnabled:Bool)->AppUtils{
+    func isEnabled(_ isEnabled:Bool) -> AppUtils{
         self.base.isEnabled = isEnabled
         return self
     }
     
-    func numberOfLines(_ numberOfLines:Int)->AppUtils{
+    func numberOfLines(_ numberOfLines:Int) -> AppUtils{
         self.base.numberOfLines = numberOfLines
         return self
     }

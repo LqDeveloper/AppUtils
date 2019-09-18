@@ -48,6 +48,9 @@
 		51CEF6A6230BCDAD00C509E3 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A5230BCDAD00C509E3 /* UIViewControllerExtension.swift */; };
 		51CEF6A8230BD3D000C509E3 /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A7230BD3D000C509E3 /* UITabBarControllerExtension.swift */; };
 		51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A9230BDB6400C509E3 /* AppUtils+UITabBarItem.swift */; };
+		51F7315D2331C212006355B4 /* AppUtils+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */; };
+		51F7315F2331C3D9006355B4 /* AppUtils+UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */; };
+		51F731612331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */; };
 		51F73C12230FF1230005EC2B /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C11230FF1230005EC2B /* UITabBarExtension.swift */; };
 		51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */; };
 		51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */; };
@@ -101,6 +104,9 @@
 		51CEF6A5230BCDAD00C509E3 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		51CEF6A7230BD3D000C509E3 /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtension.swift; sourceTree = "<group>"; };
 		51CEF6A9230BDB6400C509E3 /* AppUtils+UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UITabBarItem.swift"; sourceTree = "<group>"; };
+		51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+WKWebView.swift"; sourceTree = "<group>"; };
+		51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIWebView.swift"; sourceTree = "<group>"; };
+		51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+WKWebViewConfiguration.swift"; sourceTree = "<group>"; };
 		51F73C11230FF1230005EC2B /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
 		51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemExtension.swift; sourceTree = "<group>"; };
 		51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -201,6 +207,9 @@
 				51F984E122E54F3600F9329A /* AppUtils+UIBarItem.swift */,
 				51BFFC2F230557B600FC55AB /* AppUtils+UIStackView.swift */,
 				51CEF6A9230BDB6400C509E3 /* AppUtils+UITabBarItem.swift */,
+				51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */,
+				51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */,
+				51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */,
 			);
 			path = UIUtils;
 			sourceTree = "<group>";
@@ -379,6 +388,7 @@
 				51C9F43B22E1A8990044CA9A /* AppUtils+UISwitch.swift in Sources */,
 				51C9F44722E1BDDF0044CA9A /* AppUtils+UICollectionViewLayout.swift in Sources */,
 				51C9F43822E1A70C0044CA9A /* AppUtils+UIImageView.swift in Sources */,
+				51F7315D2331C212006355B4 /* AppUtils+WKWebView.swift in Sources */,
 				5AC95B822312B59D001909F4 /* UIViewExtension.swift in Sources */,
 				51C9F44522E1BB080044CA9A /* AppUtils+UICollectionView.swift in Sources */,
 				51F984DE22E54B1800F9329A /* AppBaseViewController.swift in Sources */,
@@ -397,8 +407,10 @@
 				51F984E222E54F3600F9329A /* AppUtils+UIBarItem.swift in Sources */,
 				51C9F45022E1C3E00044CA9A /* AppDeviceInfo.swift in Sources */,
 				51C9F44122E1AE780044CA9A /* AppUtils+UIScrollView.swift in Sources */,
+				51F731612331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift in Sources */,
 				51C9F44C22E1C15C0044CA9A /* UIColorExtension.swift in Sources */,
 				51F984E022E54C5700F9329A /* AppUtils+UITabBar.swift in Sources */,
+				51F7315F2331C3D9006355B4 /* AppUtils+UIWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
