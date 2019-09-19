@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5114ADEA2333126300DF7079 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114ADE92333126300DF7079 /* DataExtension.swift */; };
+		5114ADEC2333208B00DF7079 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114ADEB2333208B00DF7079 /* ArrayExtension.swift */; };
 		511663452314BF21005279A4 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511663442314BF21005279A4 /* UIScrollViewExtension.swift */; };
 		5136E81923151DE800E517A7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5136E81823151DE800E517A7 /* StringExtension.swift */; };
 		51533CC222E0648A009845FC /* AppUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51533CB822E0648A009845FC /* AppUtils.framework */; };
@@ -51,7 +53,7 @@
 		51F7315D2331C212006355B4 /* AppUtils+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */; };
 		51F7315F2331C3D9006355B4 /* AppUtils+UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */; };
 		51F731612331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */; };
-		51F731C323323421006355B4 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F731C223323421006355B4 /* AES.swift */; };
+		51F731C923323BE3006355B4 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F731C823323BE3006355B4 /* DateExtension.swift */; };
 		51F73C12230FF1230005EC2B /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C11230FF1230005EC2B /* UITabBarExtension.swift */; };
 		51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */; };
 		51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */; };
@@ -75,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5114ADE92333126300DF7079 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		5114ADEB2333208B00DF7079 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		511663442314BF21005279A4 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		5136E81823151DE800E517A7 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		51533CB822E0648A009845FC /* AppUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +112,7 @@
 		51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+WKWebView.swift"; sourceTree = "<group>"; };
 		51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIWebView.swift"; sourceTree = "<group>"; };
 		51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+WKWebViewConfiguration.swift"; sourceTree = "<group>"; };
-		51F731C223323421006355B4 /* AES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		51F731C823323BE3006355B4 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		51F73C11230FF1230005EC2B /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
 		51F73C13230FF1670005EC2B /* UITabBarItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemExtension.swift; sourceTree = "<group>"; };
 		51F984D722E54B1700F9329A /* AppBaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBaseTabBarController.swift; sourceTree = "<group>"; };
@@ -222,7 +226,6 @@
 				51C9F44F22E1C3E00044CA9A /* AppDeviceInfo.swift */,
 				51C9F46022E1C95C0044CA9A /* AppDebugLog.swift */,
 				5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */,
-				51F731C223323421006355B4 /* AES.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -239,6 +242,9 @@
 				51CEF6A7230BD3D000C509E3 /* UITabBarControllerExtension.swift */,
 				5136E81823151DE800E517A7 /* StringExtension.swift */,
 				51FA27692330AEF60081C871 /* NSAttributedStringExtension.swift */,
+				51F731C823323BE3006355B4 /* DateExtension.swift */,
+				5114ADE92333126300DF7079 /* DataExtension.swift */,
+				5114ADEB2333208B00DF7079 /* ArrayExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				51C9F43422E199510044CA9A /* AppUtils+UIView.swift in Sources */,
 				51FA276A2330AEF60081C871 /* NSAttributedStringExtension.swift in Sources */,
 				51C9F46122E1C95C0044CA9A /* AppDebugLog.swift in Sources */,
+				51F731C923323BE3006355B4 /* DateExtension.swift in Sources */,
 				51C9F44322E1B7060044CA9A /* AppUtils+UITableView.swift in Sources */,
 				51C9F43F22E1ABBF0044CA9A /* AppUtils+UITextField.swift in Sources */,
 				51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */,
@@ -396,9 +403,9 @@
 				51C9F44522E1BB080044CA9A /* AppUtils+UICollectionView.swift in Sources */,
 				51F984DE22E54B1800F9329A /* AppBaseViewController.swift in Sources */,
 				51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */,
+				5114ADEA2333126300DF7079 /* DataExtension.swift in Sources */,
 				5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */,
 				51C9F43D22E1A97C0044CA9A /* AppUtils+UIControll.swift in Sources */,
-				51F731C323323421006355B4 /* AES.swift in Sources */,
 				511663452314BF21005279A4 /* UIScrollViewExtension.swift in Sources */,
 				5136E81923151DE800E517A7 /* StringExtension.swift in Sources */,
 				51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */,
@@ -411,6 +418,7 @@
 				51F984E222E54F3600F9329A /* AppUtils+UIBarItem.swift in Sources */,
 				51C9F45022E1C3E00044CA9A /* AppDeviceInfo.swift in Sources */,
 				51C9F44122E1AE780044CA9A /* AppUtils+UIScrollView.swift in Sources */,
+				5114ADEC2333208B00DF7079 /* ArrayExtension.swift in Sources */,
 				51F731612331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift in Sources */,
 				51C9F44C22E1C15C0044CA9A /* UIColorExtension.swift in Sources */,
 				51F984E022E54C5700F9329A /* AppUtils+UITabBar.swift in Sources */,
@@ -496,6 +504,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -553,6 +562,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

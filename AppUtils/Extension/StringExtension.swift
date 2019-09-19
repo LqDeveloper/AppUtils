@@ -60,6 +60,23 @@ public extension String{
         free(result)
         return String(format: hash as String)
     }
+    
+    /// AES 加密 字符串本身是要加密的内容
+    ///
+    /// - Parameters:
+    ///   - key: 密钥
+    ///   - iv: 初始化向量，ECB 不需要指定
+    ///   - algorithm: 加密算法、默认的 AES/DES
+    /// - Returns: 加密后的字符串
+    func aesEncrypt(key:String,iv:String?,algorithm:CCAlgorithm = CCAlgorithm(kCCAlgorithmAES)) -> Data? {
+        guard let strData = self.data(using: .utf8) else {
+            return nil
+        }
+        guard let encrypyData = strData.aescrypt(key: key, iv: iv, operation: CCOperation(kCCEncrypt), algorithm: algorithm) else {
+            return nil
+        }
+        return encrypyData
+    }
 }
 
 

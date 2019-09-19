@@ -40,7 +40,7 @@ public enum AppDeviceInfo{
     case iPad_Pro_9_7
     case iPad_Pro_12_9
     
-    func name()->String{
+    public var name:String{
         switch self {
         case .unknown:
             return "unknown"
@@ -101,7 +101,74 @@ public enum AppDeviceInfo{
         case .iPad_Pro_9_7:
             return "iPad Pro 9.7"
         case .iPad_Pro_12_9:
-            return  "iPad Pro 12.9"
+            return "iPad Pro 12.9"
+        }
+    }
+    
+    /// 设备类型
+    public static var currentDevice:AppDeviceInfo{
+        let platform = hardwareString
+        switch platform{
+        case "i386","x86_64":
+            return .simulator
+        case "iPhone5,1","iPhone5,2":
+            return .iPhone_5
+        case "iPhone5,3","iPhone5,4":
+            return .iPhone_5C
+        case "iPhone6,1","iPhone6,2":
+            return .iPhone_5S
+        case "iPhone7,1":
+            return .iPhone_6P
+        case "iPhone7,2":
+            return .iPhone_6
+        case "iPhone8,1":
+            return .iPhone_6S
+        case "iPhone8,2":
+            return .iPhone_6S_P
+        case "iPhone8,4":
+            return .iPhone_SE
+        case "iPhone9,1","iPhone9,3":
+            return .iPhone_7
+        case "iPhone9,2","iPhone9,4":
+            return .iPhone_7P
+        case "iPhone10,1","iPhone10,4":
+            return .iPhone_8
+        case "iPhone10,2","iPhone10,5":
+            return .iPhone_8P
+        case "iPhone10,3","iPhone10,6":
+            return .iPhone_X
+        case "iPhone11,2":
+            return .iPhone_XS
+        case "iPhone11,4","iPhone11,6":
+            return .iPhone_XS_Max
+        case "iPhone11,8":
+            return .iPhone_XR
+        case "iPad1,1":
+            return .iPad_1
+        case "iPad2,1","iPad2,2","iPad2,3","iPad2,4":
+            return .iPad_2
+        case "iPad3,1","iPad3,2","iPad3,3":
+            return .iPad_3
+        case "iPad3,4","iPad3,5","iPad3,6":
+            return .iPad_4
+        case "iPad4,1","iPad4,2","iPad4,3":
+            return .iPad_Air
+        case "iPad5,3","iPad5,4":
+            return .iPad_Air_2
+        case "iPad2,5","iPad2,6","iPad2,7":
+            return .iPad_Mini_1
+        case "iPad4,4","iPad4,5","iPad4,6":
+            return .iPad_Mini_2
+        case "iPad4,7","iPad4,8","iPad4,9":
+            return .iPad_Mini_3
+        case "iPad5,1","iPad5,2":
+            return .iPad_Mini_4
+        case "iPad6,3","iPad6,4":
+            return .iPad_Pro_9_7
+        case "iPad6,7","iPad6,8":
+            return .iPad_Pro_12_9
+        default:
+            return .unknown
         }
     }
     
@@ -216,74 +283,6 @@ public extension AppDeviceInfo{
         }
         return UIApplication.shared.windows[0].safeAreaInsets.bottom > 0
     }
-    
-    /// 设备类型
-    static var currentDevice:AppDeviceInfo{
-        let platform = hardwareString
-        switch platform{
-        case "i386","x86_64":
-            return .simulator
-        case "iPhone5,1","iPhone5,2":
-            return .iPhone_5
-        case "iPhone5,3","iPhone5,4":
-            return .iPhone_5C
-        case "iPhone6,1","iPhone6,2":
-            return .iPhone_5S
-        case "iPhone7,1":
-            return .iPhone_6P
-        case "iPhone7,2":
-            return .iPhone_6
-        case "iPhone8,1":
-            return .iPhone_6S
-        case "iPhone8,2":
-            return .iPhone_6S_P
-        case "iPhone8,4":
-            return .iPhone_SE
-        case "iPhone9,1","iPhone9,3":
-            return .iPhone_7
-        case "iPhone9,2","iPhone9,4":
-            return .iPhone_7P
-        case "iPhone10,1","iPhone10,4":
-            return .iPhone_8
-        case "iPhone10,2","iPhone10,5":
-            return .iPhone_8P
-        case "iPhone10,3","iPhone10,6":
-            return .iPhone_X
-        case "iPhone11,2":
-            return .iPhone_XS
-        case "iPhone11,4","iPhone11,6":
-            return .iPhone_XS_Max
-        case "iPhone11,8":
-            return .iPhone_XR
-        case "iPad1,1":
-            return .iPad_1
-        case "iPad2,1","iPad2,2","iPad2,3","iPad2,4":
-            return .iPad_2
-        case "iPad3,1","iPad3,2","iPad3,3":
-            return .iPad_3
-        case "iPad3,4","iPad3,5","iPad3,6":
-            return .iPad_4
-        case "iPad4,1","iPad4,2","iPad4,3":
-            return .iPad_Air
-        case "iPad5,3","iPad5,4":
-            return .iPad_Air_2
-        case "iPad2,5","iPad2,6","iPad2,7":
-            return .iPad_Mini_1
-        case "iPad4,4","iPad4,5","iPad4,6":
-            return .iPad_Mini_2
-        case "iPad4,7","iPad4,8","iPad4,9":
-            return .iPad_Mini_3
-        case "iPad5,1","iPad5,2":
-            return .iPad_Mini_4
-        case "iPad6,3","iPad6,4":
-            return .iPad_Pro_9_7
-        case "iPad6,7","iPad6,8":
-            return .iPad_Pro_12_9
-        default:
-            return .unknown
-        }
-    }
-    
 }
 
 public extension AppDeviceInfo{
@@ -381,7 +380,7 @@ public extension AppDeviceInfo{
         return UIDevice.current.model
     }
     
-    ///本地化设备机型名字public enum AppHardwareType{public enum AppHardwareType{
+    ///本地化设备机型名字
     static var localizedModel: String? {
         return UIDevice.current.localizedModel
     }
