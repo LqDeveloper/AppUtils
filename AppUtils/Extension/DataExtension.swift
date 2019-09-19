@@ -110,7 +110,7 @@ public extension Data{
         
         //key
         let keyBytes = keyData.bytes
-        let keyLength = [UInt8](repeating: 0, count: kCCBlockSizeAES128).count
+        let keyLength = [UInt8](repeating: 0, count: key.count).count
         
         //data(input) 要加密的数据（指针）
         let dateBytes = self.bytes
