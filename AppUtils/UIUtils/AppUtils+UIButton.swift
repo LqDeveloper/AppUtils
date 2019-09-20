@@ -59,6 +59,11 @@ public extension AppUtils where Base:UIButton{
         return self
     }
     
+    func setTitleFont(_ font:UIFont) -> AppUtils{
+        self.base.titleLabel?.font = font
+        return self
+    }
+    
     func setImage(_ image: UIImage?, for state: UIControl.State) -> AppUtils{
         self.base.setImage(image, for: state)
         return self
