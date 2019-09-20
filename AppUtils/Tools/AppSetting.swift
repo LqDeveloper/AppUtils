@@ -8,27 +8,27 @@
 
 import Foundation
  public struct AppSetting {
-    public func getString(key:String) -> String{
+    public static func getString(key:String) -> String{
         return UserDefaults.standard.value(forKey: key)  as? String ?? ""
     }
     
-    public func setString(key:String,value:String){
+    public static func setString(key:String,value:String){
         return UserDefaults.standard.set(value, forKey: key)
     }
     
-    public func getBool(key:String) -> Bool {
+    public static func getBool(key:String) -> Bool {
         return UserDefaults.standard.bool(forKey: key)
     }
     
-    public func setBool(key:String,value:Bool){
+    public static func setBool(key:String,value:Bool){
         UserDefaults.standard.set(value, forKey: key)
     }
     
-    public func getInt(key:String) -> Int {
+    public static func getInt(key:String) -> Int {
         return UserDefaults.standard.integer(forKey: key)
     }
     
-    public func setInt(key:String,value:Int){
+    public static func setInt(key:String,value:Int){
         UserDefaults.standard.set(value, forKey: key)
     }
 }
