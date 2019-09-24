@@ -57,10 +57,9 @@ public extension AppUtils where Base:UIGestureRecognizer{
         return self
     }
     
+    @available(iOS 9.2, *)
     func requiresExclusiveTouchType(_ requiresExclusiveTouchType: Bool) -> AppUtils{
-        if #available(iOS 9.2, *) {
-           self.base.requiresExclusiveTouchType = requiresExclusiveTouchType
-        } else {}
+        self.base.requiresExclusiveTouchType = requiresExclusiveTouchType
         return self
     }
     
