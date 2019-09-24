@@ -6,7 +6,9 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 public enum AppDeviceInfo{
     case unknown
     case simulator
@@ -386,8 +388,15 @@ public extension AppDeviceInfo{
     }
     
     /// 屏幕亮度
-    static var screenBrightness: Int {
-        return Int(UIScreen.main.brightness * 100)
+    static var screenBrightness: CGFloat {
+        return UIScreen.main.brightness
+    }
+    
+    /// 修改屏幕亮度
+    ///
+    /// - Parameter brightness: 屏幕亮度
+    static func changeScreenBrightness(brightness:CGFloat){
+        UIScreen.main.brightness = brightness
     }
     
     /// 应用版本

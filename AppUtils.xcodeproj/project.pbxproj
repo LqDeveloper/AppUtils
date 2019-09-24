@@ -19,6 +19,8 @@
 		51533CE222E0685E009845FC /* AppUtils+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51533CE122E0685E009845FC /* AppUtils+UILabel.swift */; };
 		51533CE622E06A1C009845FC /* AppUtils+UILabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 51533CE122E0685E009845FC /* AppUtils+UILabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */; };
+		519389A92339EB4700EB3C17 /* AppUtils+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519389A82339EB4700EB3C17 /* AppUtils+UISearchBar.swift */; };
+		519389AF2339F07000EB3C17 /* AppAuthTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519389AE2339F07000EB3C17 /* AppAuthTool.swift */; };
 		51BFFC30230557B600FC55AB /* AppUtils+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFFC2F230557B600FC55AB /* AppUtils+UIStackView.swift */; };
 		51C9F43422E199510044CA9A /* AppUtils+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9F43322E199510044CA9A /* AppUtils+UIView.swift */; };
 		51C9F43622E19B650044CA9A /* AppUtils+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9F43522E19B650044CA9A /* AppUtils+UIButton.swift */; };
@@ -50,7 +52,16 @@
 		51CEF6A6230BCDAD00C509E3 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A5230BCDAD00C509E3 /* UIViewControllerExtension.swift */; };
 		51CEF6A8230BD3D000C509E3 /* UITabBarControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A7230BD3D000C509E3 /* UITabBarControllerExtension.swift */; };
 		51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CEF6A9230BDB6400C509E3 /* AppUtils+UITabBarItem.swift */; };
-		51F4210D2334653C00EAED18 /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4210C2334653C00EAED18 /* UserDefaultsProtocol.swift */; };
+		51E1660F2339BB6C007F550A /* AppUtils+UIProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1660E2339BB6C007F550A /* AppUtils+UIProgressView.swift */; };
+		51E166112339BC39007F550A /* AppUtils+UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E166102339BC39007F550A /* AppUtils+UISlider.swift */; };
+		51E166132339BD3B007F550A /* AppUtils+UITapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E166122339BD3B007F550A /* AppUtils+UITapGestureRecognizer.swift */; };
+		51E166152339BD6C007F550A /* AppUtils+UIGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E166142339BD6C007F550A /* AppUtils+UIGestureRecognizer.swift */; };
+		51E166172339BF84007F550A /* AppUtils+UIPinchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E166162339BF84007F550A /* AppUtils+UIPinchGestureRecognizer.swift */; };
+		51E166192339BFE7007F550A /* AppUtils+UIRotationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E166182339BFE7007F550A /* AppUtils+UIRotationGestureRecognizer.swift */; };
+		51E1661B2339C038007F550A /* AppUtils+UISwipeGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1661A2339C038007F550A /* AppUtils+UISwipeGestureRecognizer.swift */; };
+		51E1661D2339C08D007F550A /* AppUtils+UIPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1661C2339C08D007F550A /* AppUtils+UIPanGestureRecognizer.swift */; };
+		51E1661F2339C0E8007F550A /* AppUtils+UILongPressGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1661E2339C0E8007F550A /* AppUtils+UILongPressGestureRecognizer.swift */; };
+		51F4210D2334653C00EAED18 /* AppDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4210C2334653C00EAED18 /* AppDefaultsProtocol.swift */; };
 		51F4210F2334668600EAED18 /* AppNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F4210E2334668600EAED18 /* AppNetworkViewController.swift */; };
 		51F7315D2331C212006355B4 /* AppUtils+WKWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */; };
 		51F7315F2331C3D9006355B4 /* AppUtils+UIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */; };
@@ -93,6 +104,8 @@
 		51533CE122E0685E009845FC /* AppUtils+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UILabel.swift"; sourceTree = "<group>"; };
 		51533CE422E06873009845FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeychainManager.swift; sourceTree = "<group>"; };
+		519389A82339EB4700EB3C17 /* AppUtils+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UISearchBar.swift"; sourceTree = "<group>"; };
+		519389AE2339F07000EB3C17 /* AppAuthTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuthTool.swift; sourceTree = "<group>"; };
 		51BFFC2F230557B600FC55AB /* AppUtils+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIStackView.swift"; sourceTree = "<group>"; };
 		51C9F43322E199510044CA9A /* AppUtils+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIView.swift"; sourceTree = "<group>"; };
 		51C9F43522E19B650044CA9A /* AppUtils+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIButton.swift"; sourceTree = "<group>"; };
@@ -111,7 +124,16 @@
 		51CEF6A5230BCDAD00C509E3 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		51CEF6A7230BD3D000C509E3 /* UITabBarControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarControllerExtension.swift; sourceTree = "<group>"; };
 		51CEF6A9230BDB6400C509E3 /* AppUtils+UITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UITabBarItem.swift"; sourceTree = "<group>"; };
-		51F4210C2334653C00EAED18 /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
+		51E1660E2339BB6C007F550A /* AppUtils+UIProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIProgressView.swift"; sourceTree = "<group>"; };
+		51E166102339BC39007F550A /* AppUtils+UISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UISlider.swift"; sourceTree = "<group>"; };
+		51E166122339BD3B007F550A /* AppUtils+UITapGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UITapGestureRecognizer.swift"; sourceTree = "<group>"; };
+		51E166142339BD6C007F550A /* AppUtils+UIGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIGestureRecognizer.swift"; sourceTree = "<group>"; };
+		51E166162339BF84007F550A /* AppUtils+UIPinchGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIPinchGestureRecognizer.swift"; sourceTree = "<group>"; };
+		51E166182339BFE7007F550A /* AppUtils+UIRotationGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIRotationGestureRecognizer.swift"; sourceTree = "<group>"; };
+		51E1661A2339C038007F550A /* AppUtils+UISwipeGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UISwipeGestureRecognizer.swift"; sourceTree = "<group>"; };
+		51E1661C2339C08D007F550A /* AppUtils+UIPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIPanGestureRecognizer.swift"; sourceTree = "<group>"; };
+		51E1661E2339C0E8007F550A /* AppUtils+UILongPressGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UILongPressGestureRecognizer.swift"; sourceTree = "<group>"; };
+		51F4210C2334653C00EAED18 /* AppDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaultsProtocol.swift; sourceTree = "<group>"; };
 		51F4210E2334668600EAED18 /* AppNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetworkViewController.swift; sourceTree = "<group>"; };
 		51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+WKWebView.swift"; sourceTree = "<group>"; };
 		51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIWebView.swift"; sourceTree = "<group>"; };
@@ -220,6 +242,16 @@
 				51F7315C2331C212006355B4 /* AppUtils+WKWebView.swift */,
 				51F731602331CDEE006355B4 /* AppUtils+WKWebViewConfiguration.swift */,
 				51F7315E2331C3D9006355B4 /* AppUtils+UIWebView.swift */,
+				51E1660E2339BB6C007F550A /* AppUtils+UIProgressView.swift */,
+				51E166102339BC39007F550A /* AppUtils+UISlider.swift */,
+				519389A82339EB4700EB3C17 /* AppUtils+UISearchBar.swift */,
+				51E166142339BD6C007F550A /* AppUtils+UIGestureRecognizer.swift */,
+				51E166122339BD3B007F550A /* AppUtils+UITapGestureRecognizer.swift */,
+				51E166162339BF84007F550A /* AppUtils+UIPinchGestureRecognizer.swift */,
+				51E166182339BFE7007F550A /* AppUtils+UIRotationGestureRecognizer.swift */,
+				51E1661A2339C038007F550A /* AppUtils+UISwipeGestureRecognizer.swift */,
+				51E1661C2339C08D007F550A /* AppUtils+UIPanGestureRecognizer.swift */,
+				51E1661E2339C0E8007F550A /* AppUtils+UILongPressGestureRecognizer.swift */,
 			);
 			path = UIUtils;
 			sourceTree = "<group>";
@@ -230,7 +262,8 @@
 				51C9F44F22E1C3E00044CA9A /* AppDeviceInfo.swift */,
 				51C9F46022E1C95C0044CA9A /* AppDebugLog.swift */,
 				5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */,
-				51F4210C2334653C00EAED18 /* UserDefaultsProtocol.swift */,
+				51F4210C2334653C00EAED18 /* AppDefaultsProtocol.swift */,
+				519389AE2339F07000EB3C17 /* AppAuthTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -393,14 +426,19 @@
 				51CEF6A6230BCDAD00C509E3 /* UIViewControllerExtension.swift in Sources */,
 				51F984DD22E54B1800F9329A /* AppBaseTableViewController.swift in Sources */,
 				51C9F43422E199510044CA9A /* AppUtils+UIView.swift in Sources */,
+				51E1660F2339BB6C007F550A /* AppUtils+UIProgressView.swift in Sources */,
 				51FA276A2330AEF60081C871 /* NSAttributedStringExtension.swift in Sources */,
 				51C9F46122E1C95C0044CA9A /* AppDebugLog.swift in Sources */,
 				51F731C923323BE3006355B4 /* DateExtension.swift in Sources */,
 				51C9F44322E1B7060044CA9A /* AppUtils+UITableView.swift in Sources */,
 				51C9F43F22E1ABBF0044CA9A /* AppUtils+UITextField.swift in Sources */,
+				519389AF2339F07000EB3C17 /* AppAuthTool.swift in Sources */,
 				51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */,
+				51E166172339BF84007F550A /* AppUtils+UIPinchGestureRecognizer.swift in Sources */,
 				51C9F44922E1BF190044CA9A /* AppUtils+UITextView.swift in Sources */,
-				51F4210D2334653C00EAED18 /* UserDefaultsProtocol.swift in Sources */,
+				51F4210D2334653C00EAED18 /* AppDefaultsProtocol.swift in Sources */,
+				519389A92339EB4700EB3C17 /* AppUtils+UISearchBar.swift in Sources */,
+				51E166192339BFE7007F550A /* AppUtils+UIRotationGestureRecognizer.swift in Sources */,
 				51CEF6A8230BD3D000C509E3 /* UITabBarControllerExtension.swift in Sources */,
 				51C9F43B22E1A8990044CA9A /* AppUtils+UISwitch.swift in Sources */,
 				51F4210F2334668600EAED18 /* AppNetworkViewController.swift in Sources */,
@@ -412,13 +450,19 @@
 				51F984DE22E54B1800F9329A /* AppBaseViewController.swift in Sources */,
 				51F984DB22E54B1800F9329A /* AppBaseTabBarController.swift in Sources */,
 				5114ADEA2333126300DF7079 /* DataExtension.swift in Sources */,
+				51E1661F2339C0E8007F550A /* AppUtils+UILongPressGestureRecognizer.swift in Sources */,
+				51E166132339BD3B007F550A /* AppUtils+UITapGestureRecognizer.swift in Sources */,
 				5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */,
+				51E166152339BD6C007F550A /* AppUtils+UIGestureRecognizer.swift in Sources */,
+				51E1661B2339C038007F550A /* AppUtils+UISwipeGestureRecognizer.swift in Sources */,
+				51E1661D2339C08D007F550A /* AppUtils+UIPanGestureRecognizer.swift in Sources */,
 				51C9F43D22E1A97C0044CA9A /* AppUtils+UIControl.swift in Sources */,
 				511663452314BF21005279A4 /* UIScrollViewExtension.swift in Sources */,
 				5136E81923151DE800E517A7 /* StringExtension.swift in Sources */,
 				51CEF6AA230BDB6400C509E3 /* AppUtils+UITabBarItem.swift in Sources */,
 				51F984DC22E54B1800F9329A /* AppBaseNavigationController.swift in Sources */,
 				51C9F43622E19B650044CA9A /* AppUtils+UIButton.swift in Sources */,
+				51E166112339BC39007F550A /* AppUtils+UISlider.swift in Sources */,
 				51533CE222E0685E009845FC /* AppUtils+UILabel.swift in Sources */,
 				51BFFC30230557B600FC55AB /* AppUtils+UIStackView.swift in Sources */,
 				51533CDF22E064C3009845FC /* AppUtilsNameSpace.swift in Sources */,

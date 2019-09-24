@@ -6,7 +6,10 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
 public extension AppUtils where Base:UISwitch{
     func onTintColor(_ onTintColor:UIColor?) -> AppUtils{
         self.base.onTintColor = onTintColor

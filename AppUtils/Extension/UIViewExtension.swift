@@ -6,7 +6,9 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
 
 public extension UIView{
     static var currentViewController:UIViewController? {

@@ -6,7 +6,10 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
 public extension AppUtils where Base:UIStackView{
     func addArrangedSubview(_ view: UIView) -> AppUtils{
         self.base.addArrangedSubview(view)

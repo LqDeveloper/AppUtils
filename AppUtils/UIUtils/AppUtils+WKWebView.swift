@@ -6,8 +6,13 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
+#if canImport(WebKit)
 import WebKit
+#endif
 
 public extension AppUtils where Base:WKWebView{
     func navigationDelegate(_ navigationDelegate: WKNavigationDelegate?) -> AppUtils{

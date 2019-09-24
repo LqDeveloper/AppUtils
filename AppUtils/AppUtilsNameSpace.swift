@@ -7,7 +7,11 @@
 //
 
 import Foundation
+
+#if canImport(UIKit)
 import UIKit
+#endif
+
 public struct AppUtils<Base> {
     public let base:Base
     

@@ -6,7 +6,10 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
 extension UIView:AppUtilsProtocol{}
 public extension AppUtils where Base:UIView{
     func frame(_ frame:CGRect) -> AppUtils{

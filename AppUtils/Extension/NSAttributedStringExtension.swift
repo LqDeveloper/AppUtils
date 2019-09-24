@@ -6,7 +6,9 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
 
 public func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributedString {
     let result = NSMutableAttributedString()

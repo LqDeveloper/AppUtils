@@ -7,7 +7,9 @@
 //
 
 import Foundation
+#if canImport(Security)
 import Security
+#endif
 open class AppKeychainManager{
     open  class func update(service:String?,account:String?,password:String?) ->OSStatus{
         guard let ser = service,let acc = account,let pwd = password else {

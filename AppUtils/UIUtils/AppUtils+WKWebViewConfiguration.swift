@@ -6,7 +6,9 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
+#if canImport(WebKit)
 import WebKit
+#endif
 
 public extension AppUtils where Base:WKWebViewConfiguration{
     func processPool(_ processPool: WKProcessPool) -> AppUtils{

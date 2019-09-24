@@ -6,7 +6,10 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
+#endif
+
 extension UICollectionViewFlowLayout:AppUtilsProtocol{}
 public extension AppUtils where Base:UICollectionViewFlowLayout{
     func minimumLineSpacing(_ minimumLineSpacing:CGFloat) -> AppUtils{

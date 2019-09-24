@@ -6,7 +6,10 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
-import Foundation
+#if canImport(UIKit)
+import UIKit
+#endif
+
 public extension AppUtils where Base:UIButton{
     func contentEdgeInsets(_ contentEdgeInsets:UIEdgeInsets) -> AppUtils {
         self.base.contentEdgeInsets = contentEdgeInsets
