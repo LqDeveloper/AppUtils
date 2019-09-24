@@ -39,6 +39,8 @@ public extension String{
         formatter.locale = locale
         formatter.allowsFloats = true
         formatter.maximumFractionDigits = fractionDigits
+        formatter.minimumFractionDigits = fractionDigits
+        formatter.minimumIntegerDigits  = 1
         guard let floatValue = Float.init(self) else {
             return nil
         }
