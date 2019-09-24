@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '4.2'
   spec.framework  = "Security"
   spec.framework  = "WebKit"
+  spec.framework  = "LocalAuthentication"
   spec.dependency "SwifterSwift"
 end
 
