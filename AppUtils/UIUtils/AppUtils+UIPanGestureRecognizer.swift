@@ -6,9 +6,7 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
-#if canImport(UIKit)
 import UIKit
-#endif
 
 public extension AppUtils where Base:UIPanGestureRecognizer{
     func minimumNumberOfTouches(_ minimumNumberOfTouches: Int) -> AppUtils {

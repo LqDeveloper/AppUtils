@@ -6,9 +6,8 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
-#if canImport(UIKit)
 import UIKit
-#endif
+
 public enum AppDeviceInfo{
     case unknown
     case simulator

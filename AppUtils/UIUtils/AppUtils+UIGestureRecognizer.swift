@@ -6,9 +6,7 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
-#if canImport(UIKit)
 import UIKit
-#endif
 
 extension UIGestureRecognizer:AppUtilsProtocol{}
 public extension AppUtils where Base:UIGestureRecognizer{

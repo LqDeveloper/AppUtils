@@ -6,13 +6,8 @@
 //  Copyright © 2019 williamoneilchina. All rights reserved.
 //
 
-#if canImport(UIKit)
 import UIKit
-#endif
-
-#if canImport(LocalAuthentication)
 import LocalAuthentication
-#endif
 
 
 /// 需要在info.plist中添加 Privacy - Face ID Usage Description

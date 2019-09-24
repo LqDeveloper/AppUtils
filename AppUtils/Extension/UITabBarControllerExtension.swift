@@ -6,9 +6,7 @@
 //  Copyright © 2019 lq. All rights reserved.
 //
 
-#if canImport(UIKit)
 import UIKit
-#endif
 
 public extension UITabBarController{
     func addViewControllers(viewControllers:[UIViewController],titles:[String],normalImages:[UIImage?],normalAttribute:[NSAttributedString.Key : Any]? = nil,selectImages:[UIImage?],selectAttribute:[NSAttributedString.Key : Any]? = nil,titlePosition:UIOffset? = nil){
