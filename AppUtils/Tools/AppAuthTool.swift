@@ -11,7 +11,8 @@ import LocalAuthentication
 
 
 /// 需要在info.plist中添加 Privacy - Face ID Usage Description
-public enum LocalAuthError:Error{
+public enum LocalAuthStatus{
+    case success
     case failed               //失败
     case passwordNotSet       //未设置手机密码
     case touchIdNotSet        //未设置指纹
@@ -21,7 +22,7 @@ public enum LocalAuthError:Error{
     case userFallback         //输入密码
     case biometryNotAvailable //没有权限
     case other                //其他
-    public static func initWithError(_ error: LAError) -> LocalAuthError {
+    public static func initWithError(_ error: LAError) -> LocalAuthStatus {
         switch Int32(error.errorCode) {
         case kLAErrorAuthenticationFailed:
             return failed
@@ -84,27 +85,27 @@ public class AppAuthTool{
         }
     }
     
-    public func userAuth(_ reason: String = "Confirm your fingerprint to authenticate.",_ fallbackTitle:String = "", _ cancelTitle: String = "",completion: @escaping (Result<Bool, LocalAuthError>) -> ()){
+    public func userAuth(_ reason: String = "Confirm your fingerprint to authenticate.",_ fallbackTitle:String = "", _ cancelTitle: String = "",completion: @escaping (LocalAuthStatus) -> ()){
         //如果为空不展示输入密码的按钮
         authContext.localizedFallbackTitle = fallbackTitle
         if #available(iOS 10.0, *) {
             authContext.localizedCancelTitle = cancelTitle
         }
         guard canEvaluatePolicy else{
-            completion(.failure(.biometryNotAvailable))
+            completion(.biometryNotAvailable)
             return
         }
         evaluate(policy: .deviceOwnerAuthenticationWithBiometrics,reason: reason, completion: completion)
     }
     
-    private func evaluate(policy: LAPolicy, reason: String, completion: @escaping (Result<Bool, LocalAuthError>) -> ()) {
+    private func evaluate(policy: LAPolicy, reason: String, completion: @escaping (LocalAuthStatus) -> ()) {
         authContext.evaluatePolicy(policy, localizedReason: reason) { (success, err) in
             DispatchQueue.main.async {
                 if success {
-                    completion(.success(true))
+                    completion(.success)
                 }else {
-                    let errorType = LocalAuthError.initWithError(err as! LAError)
-                    completion(.failure(errorType))
+                    let errorType = LocalAuthStatus.initWithError(err as! LAError)
+                    completion(errorType)
                 }
             }
         }
