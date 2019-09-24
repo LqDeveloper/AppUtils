@@ -20,6 +20,7 @@
 		51533CE622E06A1C009845FC /* AppUtils+UILabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 51533CE122E0685E009845FC /* AppUtils+UILabel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		5154F59B230E5D7A00B7A758 /* AppKeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */; };
 		519389A92339EB4700EB3C17 /* AppUtils+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519389A82339EB4700EB3C17 /* AppUtils+UISearchBar.swift */; };
+		519389FE233A1E4A00EB3C17 /* AppAuthTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 519389FD233A1E4A00EB3C17 /* AppAuthTool.swift */; };
 		51BFFC30230557B600FC55AB /* AppUtils+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BFFC2F230557B600FC55AB /* AppUtils+UIStackView.swift */; };
 		51C9F43422E199510044CA9A /* AppUtils+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9F43322E199510044CA9A /* AppUtils+UIView.swift */; };
 		51C9F43622E19B650044CA9A /* AppUtils+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C9F43522E19B650044CA9A /* AppUtils+UIButton.swift */; };
@@ -104,6 +105,7 @@
 		51533CE422E06873009845FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeychainManager.swift; sourceTree = "<group>"; };
 		519389A82339EB4700EB3C17 /* AppUtils+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UISearchBar.swift"; sourceTree = "<group>"; };
+		519389FD233A1E4A00EB3C17 /* AppAuthTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAuthTool.swift; sourceTree = "<group>"; };
 		51BFFC2F230557B600FC55AB /* AppUtils+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIStackView.swift"; sourceTree = "<group>"; };
 		51C9F43322E199510044CA9A /* AppUtils+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIView.swift"; sourceTree = "<group>"; };
 		51C9F43522E19B650044CA9A /* AppUtils+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUtils+UIButton.swift"; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				51C9F46022E1C95C0044CA9A /* AppDebugLog.swift */,
 				5154F59A230E5D7A00B7A758 /* AppKeychainManager.swift */,
 				51F4210C2334653C00EAED18 /* AppDefaultsProtocol.swift */,
+				519389FD233A1E4A00EB3C17 /* AppAuthTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				51F731C923323BE3006355B4 /* DateExtension.swift in Sources */,
 				51C9F44322E1B7060044CA9A /* AppUtils+UITableView.swift in Sources */,
 				51C9F43F22E1ABBF0044CA9A /* AppUtils+UITextField.swift in Sources */,
+				519389FE233A1E4A00EB3C17 /* AppAuthTool.swift in Sources */,
 				51F73C14230FF1670005EC2B /* UITabBarItemExtension.swift in Sources */,
 				51E166172339BF84007F550A /* AppUtils+UIPinchGestureRecognizer.swift in Sources */,
 				51C9F44922E1BF190044CA9A /* AppUtils+UITextView.swift in Sources */,
