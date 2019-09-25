@@ -11,7 +11,7 @@ import LocalAuthentication
 
 
 /// 需要在info.plist中添加 Privacy - Face ID Usage Description
-public enum LocalAuthStatus{
+public enum LocalAuthStatus:Int{
     case success
     case failed               //失败
     case passwordNotSet       //未设置手机密码
@@ -46,7 +46,7 @@ public enum LocalAuthStatus{
     }
 }
 
-public enum AuthType{
+public enum AuthType:Int{
     case none
     case touchID
     case faceID
